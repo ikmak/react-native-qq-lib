@@ -125,6 +125,7 @@ public class QQModule
 
       if (packageNames != null) {
         Log.d(TAG, "packageNames: " + packageNames);
+        Tencent.setIsPermissionGranted(true);
         api =
           Tencent.createInstance(
             appId,
