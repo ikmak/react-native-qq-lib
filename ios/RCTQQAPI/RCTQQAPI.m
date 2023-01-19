@@ -73,6 +73,12 @@ RCT_EXPORT_MODULE();
     }
 }
 
+RCT_EXPORT_METHOD(initQQAPI:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
+{
+    [TencentOAuth setIsUserAgreedAuthorization:YES];
+    resolve(@[[NSNull null]]);
+}
+
 RCT_EXPORT_METHOD(isQQInstalled:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
 {
     if ([QQApiInterface isSupportShareToQQ]) {

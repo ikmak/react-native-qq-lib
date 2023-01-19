@@ -111,7 +111,7 @@ public class QQModule
   }
 
   @ReactMethod
-  public void init() {
+  public void initQQAPI() {
     if (api == null) {
       String packageNames = null;
       try {
