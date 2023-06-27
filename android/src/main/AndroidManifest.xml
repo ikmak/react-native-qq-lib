@@ -49,4 +49,7 @@
         </provider>
     </application>
 
+    <queries>
+        <package android:name="com.tencent.mobileqq" />
+    </queries>
 </manifest>

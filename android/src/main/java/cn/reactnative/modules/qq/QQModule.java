@@ -148,7 +148,7 @@ public class QQModule
       promise.reject(NOT_INIT);
       return;
     }
-    if (api.isSupportSSOLogin(getCurrentActivity())) {
+    if (api.isQQInstalled(getReactApplicationContext())) {
       promise.resolve(true);
     } else {
       promise.reject("not installed");
